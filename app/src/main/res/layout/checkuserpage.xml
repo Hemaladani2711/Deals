@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="364dp"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/View1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btnExistingUserLogin"
+                android:layout_marginTop="40dp"
+                android:background="#FF0000FF" />
+
+            <EditText
+                android:id="@+id/edtEmailExistingUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rdoExistingUser"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:hint="Enter Email Id" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtExistingUserPw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edtEmailExistingUser"
+                android:layout_below="@+id/edtEmailExistingUser"
+                android:ems="10"
+                android:hint="Enter Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnExistingUserLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/edtExistingUserPw"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/btnForgotPW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/View1"
+                android:layout_alignParentRight="true"
+                android:text="Forgot Password" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+            </RadioGroup>
+
+            <RadioButton
+                android:id="@+id/rdoExistingUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:checked="true"
+                android:text="Existing User" />
+
+            <RadioButton
+                android:id="@+id/rdoNewUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rdoExistingUser"
+                android:layout_below="@+id/View1"
+                android:layout_marginTop="16dp"
+                android:text="New User" />
+
+            <Button
+                android:id="@+id/btnCheckNewUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Register" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
