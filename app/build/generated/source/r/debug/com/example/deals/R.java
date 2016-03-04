@@ -911,6 +911,7 @@ containing a value of this type.
         public static final int app_name=0x7f0b000e;
         public static final int flashscreen=0x7f0b000f;
         public static final int hello_world=0x7f0b0010;
+        public static final int strHintPassword=0x7f0b0011;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

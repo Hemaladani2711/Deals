@@ -370,6 +370,7 @@ int string action_settings 0x7f0b000d
 int string app_name 0x7f0b000e
 int string flashscreen 0x7f0b000f
 int string hello_world 0x7f0b0010
+int string strHintPassword 0x7f0b0011
 int style AppBaseTheme 0x7f080000
 int style AppTheme 0x7f08003a
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f08003b
