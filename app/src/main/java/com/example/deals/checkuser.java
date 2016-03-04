@@ -11,7 +11,9 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
+
 public class checkuser extends Activity {
+
 
 	RadioButton rdoExistingUser,rdoNewUser;
 	EditText edtExistingUserId, edtExistingUserPW;
@@ -156,7 +158,3 @@ public class checkuser extends Activity {
 	
 
 }
-
-
-// this is an edit.  Blah!!!!  --- Hank
-// this is edit #2 in Myles -- Hank
