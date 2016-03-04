@@ -17,7 +17,6 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.example.SQLITEDatabase.DatabaseHandle;
-import com.example.webservices.WebReceiveAds;
 import com.example.webservices.WebSendNewUserData;
 
 import java.util.Calendar;
@@ -171,8 +170,6 @@ public class NewUserDetailPage extends Activity {
 				//Toast.makeText(getApplicationContext(), "" + userId, Toast.LENGTH_LONG).show();
 				createnewUser task = new createnewUser();
 				task.execute();
-				fetchadvertisements taks1=new fetchadvertisements();
-				taks1.execute();
 			}
 
 
@@ -207,45 +204,6 @@ public class NewUserDetailPage extends Activity {
 			super.onPostExecute(aVoid);
 			pg.cancel();
 			Toast.makeText(getApplicationContext(), "User Successfully created", Toast.LENGTH_LONG).show();
-
-		}
-
-		@Override
-		protected void onProgressUpdate(Void... values) {
-			super.onProgressUpdate(values);
-		}
-	}
-
-	public class fetchadvertisements extends AsyncTask<String,Void, Void>
-	{
-		ProgressDialog pd;
-
-		@Override
-		protected Void doInBackground(String... params) {
-			WebReceiveAds obj =new WebReceiveAds();
-			obj.senddata(userId,strUserZipCode,strCountryName,datecreated);
-			obj.fetchads();
-
-
-
-			return null;
-
-		}
-
-		@Override
-		protected void onPreExecute() {
-			super.onPreExecute();
-			pd=new ProgressDialog(NewUserDetailPage.this);
-			pd.setMessage("Downloading Ads");
-			pd.show();
-
-		}
-
-		@Override
-		protected void onPostExecute(Void aVoid) {
-			super.onPostExecute(aVoid);
-			pd.cancel();
-
 
 		}
 

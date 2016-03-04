@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/LinearLayout1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical" >
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#D0D0D0">
 
-    <ScrollView
-        android:id="@+id/scrollView1"
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:src="@drawable/logo99"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp" />
 
         <RelativeLayout
             android:id="@+id/RelativeLayout2"
             android:layout_width="match_parent"
             android:layout_height="364dp"
-            android:orientation="vertical" >
-
-            <View
-                android:id="@+id/View1"
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:layout_alignParentLeft="true"
-                android:layout_below="@+id/btnExistingUserLogin"
-                android:layout_marginTop="40dp"
-                android:background="#FF0000FF" />
+            android:orientation="vertical"
+            android:layout_weight="0.78">
 
             <EditText
                 android:id="@+id/edtEmailExistingUser"
@@ -32,7 +35,7 @@
                 android:layout_below="@+id/rdoExistingUser"
                 android:layout_centerHorizontal="true"
                 android:ems="10"
-                android:hint="Enter Email Id" >
+                android:hint="name@email.com" >
 
                 <requestFocus />
             </EditText>
@@ -44,24 +47,31 @@
                 android:layout_alignLeft="@+id/edtEmailExistingUser"
                 android:layout_below="@+id/edtEmailExistingUser"
                 android:ems="10"
-                android:hint="@string/strHintPassword"
+                android:hint="password"
                 android:inputType="textPassword" />
 
             <Button
                 android:id="@+id/btnExistingUserLogin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_below="@+id/edtExistingUserPw"
-                android:text="Login" />
+                android:layout_width="100dp"
+                android:padding="12dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/edtExistingUserPw"
+                android:layout_alignStart="@+id/edtExistingUserPw"
+                android:text="login"/>
+
+
 
             <Button
                 android:id="@+id/btnForgotPW"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/View1"
-                android:layout_alignParentRight="true"
-                android:text="Forgot Password" />
+                android:layout_width="100dp"
+                android:padding="12dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:text="forgot"
+                android:layout_alignTop="@+id/btnExistingUserLogin"
+                android:layout_alignRight="@+id/edtExistingUserPw"
+                android:layout_alignEnd="@+id/edtExistingUserPw" />
 
             <RadioGroup
                 android:id="@+id/radioGroup1"
@@ -79,27 +89,36 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp"
                 android:checked="true"
-                android:text="Existing User" />
+                android:text="user" />
 
             <RadioButton
                 android:id="@+id/rdoNewUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/rdoExistingUser"
-                android:layout_below="@+id/View1"
-                android:layout_marginTop="16dp"
-                android:text="New User" />
+                android:text="new user"
+                android:checked="false"
+                android:layout_alignBottom="@+id/btnCheckNewUser"
+                android:layout_alignRight="@+id/btnExistingUserLogin"
+                android:layout_alignEnd="@+id/btnExistingUserLogin" />
 
             <Button
                 android:id="@+id/btnCheckNewUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:text="Register" />
+                android:text="sign up"
+                android:layout_below="@+id/btnForgotPW"
+                android:layout_alignLeft="@+id/btnForgotPW"
+                android:layout_alignStart="@+id/btnForgotPW" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 
-    </ScrollView>
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
