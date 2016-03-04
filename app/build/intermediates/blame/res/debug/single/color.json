@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\Rangel\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text_holo.xml",
+        "source": "C:\\Users\\Rangel\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\color\\abc_search_url_text_holo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text_holo.xml",
+        "source": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\color\\abc_search_url_text_holo.xml"
+    },
+    {
         "merged": "E:\\Workspace\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text_holo.xml",
         "source": "E:\\Workspace\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\color\\abc_search_url_text_holo.xml"
     }

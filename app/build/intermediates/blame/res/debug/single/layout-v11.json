@@ -2,5 +2,13 @@
     {
         "merged": "E:\\Workspace\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\abc_action_bar_decor.xml",
         "source": "E:\\Workspace\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\layout-v11\\abc_action_bar_decor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\abc_action_bar_decor.xml",
+        "source": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\layout-v11\\abc_action_bar_decor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Rangel\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\abc_action_bar_decor.xml",
+        "source": "C:\\Users\\Rangel\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\layout-v11\\abc_action_bar_decor.xml"
     }
 ]
