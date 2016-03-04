@@ -66,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="User"
+            android:text="Consumer"
             android:layout_below="@+id/radioGroup1"
             android:layout_toLeftOf="@+id/btnUserSubmit"
             android:layout_toStartOf="@+id/btnUserSubmit"

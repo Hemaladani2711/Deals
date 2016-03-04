@@ -1,5 +1,29 @@
 [
     {
+        "outputFile": "E:\\Workspace\\app\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "E:\\Workspace\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 310,
+                        "endColumn": 57,
+                        "endOffset": 363
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "C:\\Users\\Rangel\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
         "map": [
             {
@@ -24,7 +48,7 @@
         ]
     },
     {
-        "outputFile": "E:\\Workspace\\app\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "outputFile": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -35,13 +59,13 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "E:\\Workspace\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "file": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 310,
+                        "startOffset": 312,
                         "endColumn": 57,
-                        "endOffset": 363
+                        "endOffset": 365
                     }
                 }
             }

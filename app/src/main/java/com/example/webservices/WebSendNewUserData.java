@@ -25,7 +25,7 @@ import java.util.ArrayList;
  * Created by Hemal on 12/15/2015.
  */
 public class WebSendNewUserData {
-    public static String URL="http://10.0.0.114/dealswebservice/getUserData.php";
+    public static String URL="http://134.154.22.174/dealswebservice/getUserData.php";
 
     String strUserName,strUserMobileNo,strUserEmail,strUserPW,strUserZipCode,strCountryName, strIsBusiness,strDateCreated;
     int userId;
