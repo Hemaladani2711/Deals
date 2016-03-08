@@ -68,12 +68,12 @@
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_tab_selected_focused_holo.9.png"
     },
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_spinner_ab_focused_holo_dark.9.png",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_spinner_ab_focused_holo_dark.9.png"
-    },
-    {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_menu_dropdown_panel_holo_light.9.png",
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_menu_dropdown_panel_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_spinner_ab_focused_holo_dark.9.png",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_spinner_ab_focused_holo_dark.9.png"
     },
     {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
@@ -90,14 +90,6 @@
     {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_spinner_ab_pressed_holo_light.9.png",
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_spinner_ab_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/fp1.png",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/drawable-hdpi/fp1.png"
-    },
-    {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ss1.png",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/drawable-hdpi/ss1.png"
     },
     {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/logo99.png",
@@ -126,10 +118,6 @@
     {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_tab_selected_holo.9.png",
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_tab_selected_holo.9.png"
-    },
-    {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/dang2.png",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/drawable-hdpi/dang2.png"
     },
     {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_commit_search_api_holo_light.png",
@@ -176,20 +164,12 @@
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_ic_menu_share_holo_dark.png"
     },
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ab_stacked_transparent_dark_holo.9.png",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_ab_stacked_transparent_dark_holo.9.png"
-    },
-    {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ab_bottom_transparent_light_holo.9.png",
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_ab_bottom_transparent_light_holo.9.png"
     },
     {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_tab_selected_pressed_holo.9.png",
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_tab_selected_pressed_holo.9.png"
-    },
-    {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_divider_holo_light.9.png",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_list_divider_holo_light.9.png"
     },
     {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_moreoverflow_normal_holo_light.png",
@@ -200,12 +180,24 @@
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_spinner_ab_disabled_holo_dark.9.png"
     },
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_search_default_holo_light.9.png",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_textfield_search_default_holo_light.9.png"
-    },
-    {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_cab_done_holo_light.png",
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_ic_cab_done_holo_light.png"
+    },
+    {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ab_stacked_transparent_dark_holo.9.png",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_ab_stacked_transparent_dark_holo.9.png"
+    },
+    {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/zd1.png",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/drawable-hdpi/zd1.png"
+    },
+    {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_divider_holo_light.9.png",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_list_divider_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_search_default_holo_light.9.png",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-hdpi/abc_textfield_search_default_holo_light.9.png"
     },
     {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ab_stacked_solid_light_holo.9.png",
