@@ -901,10 +901,9 @@ containing a value of this type.
         public static final int abc_search_view=0x7f040017;
         public static final int activity_main=0x7f040018;
         public static final int checkuserpage=0x7f040019;
-        public static final int fade_in=0x7f04001a;
-        public static final int forgotpassword=0x7f04001b;
-        public static final int newuserdetailpage=0x7f04001c;
-        public static final int support_simple_spinner_dropdown_item=0x7f04001d;
+        public static final int forgotpassword=0x7f04001a;
+        public static final int newuserdetailpage=0x7f04001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f04001c;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
