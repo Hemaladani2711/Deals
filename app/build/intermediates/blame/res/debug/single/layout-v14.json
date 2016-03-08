@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout-v14/abc_activity_chooser_view.xml",
-        "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout-v14/abc_activity_chooser_view.xml"
-    },
-    {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout-v14/abc_activity_chooser_view.xml",
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout-v14/abc_activity_chooser_view.xml"
     }
