@@ -364,10 +364,9 @@ int layout abc_search_dropdown_item_icons_2line 0x7f040016
 int layout abc_search_view 0x7f040017
 int layout activity_main 0x7f040018
 int layout checkuserpage 0x7f040019
-int layout fade_in 0x7f04001a
-int layout forgotpassword 0x7f04001b
-int layout newuserdetailpage 0x7f04001c
-int layout support_simple_spinner_dropdown_item 0x7f04001d
+int layout forgotpassword 0x7f04001a
+int layout newuserdetailpage 0x7f04001b
+int layout support_simple_spinner_dropdown_item 0x7f04001c
 int menu main 0x7f0d0000
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f0c0000
