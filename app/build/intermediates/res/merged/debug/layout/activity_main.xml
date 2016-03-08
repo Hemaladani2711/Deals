@@ -15,7 +15,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        
         android:layout_centerInParent="true"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
@@ -26,12 +25,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Deals Near You!"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
+        android:layout_marginBottom="93dp"
+        android:textSize="25dp"
+        android:textColor="@color/primary_darker"
+        android:layout_alignBottom="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:background="@color/white"
-        android:textColor="@color/primary_darker"/>
+        android:id="@+id/textView1"/>
+
 
 </RelativeLayout>

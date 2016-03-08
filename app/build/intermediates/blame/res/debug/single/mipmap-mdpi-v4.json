@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
-        "source": "/Users/joshuamarquez/Downloads/Deals-master/app/src/main/res/mipmap-mdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     }
