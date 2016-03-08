@@ -12,60 +12,60 @@
         "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_action_bar_tabbar.xml",
-        "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_bar_tabbar.xml"
+        "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/joshuamarquez/Downloads/Deals-master/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_screen.xml",
         "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_screen.xml"
     },
     {
-        "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/joshuamarquez/Downloads/Deals-master/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_action_bar_tabbar.xml",
+        "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_bar_tabbar.xml"
+    },
+    {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_list_menu_item_layout.xml"
     },
     {
         "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
         "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor_overlay.xml",
-        "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_bar_decor_overlay.xml"
-    },
-    {
         "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
         "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_include.xml",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_activity_chooser_view_include.xml"
+        "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor_overlay.xml",
+        "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_bar_decor_overlay.xml"
     },
     {
         "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
         "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_list_menu_item_icon.xml"
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_include.xml",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_activity_chooser_view_include.xml"
     },
     {
         "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
         "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_list_menu_item_radio.xml"
-    },
-    {
         "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_include.xml",
         "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_activity_chooser_view_include.xml"
+    },
+    {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/checkuserpage.xml",
@@ -92,12 +92,12 @@
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/layout/newuserdetailpage.xml"
     },
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_mode_bar.xml"
-    },
-    {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor.xml",
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_bar_decor.xml"
+    },
+    {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
@@ -128,16 +128,16 @@
         "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor_include.xml",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_bar_decor_include.xml"
+        "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/forgotpassword.xml",
         "source": "/Users/joshuamarquez/Downloads/Deals-master/app/src/main/res/layout/forgotpassword.xml"
     },
     {
-        "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_activity_chooser_view_list_item.xml"
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor_include.xml",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_bar_decor_include.xml"
     },
     {
         "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
@@ -188,12 +188,12 @@
         "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
         "source": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Users/joshuamarquez/Downloads/Deals-master/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor.xml",
