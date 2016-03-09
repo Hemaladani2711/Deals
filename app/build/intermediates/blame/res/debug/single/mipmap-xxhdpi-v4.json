@@ -1,6 +1,10 @@
 [
     {
-        "merged": "E:\\Workspace\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
-        "source": "E:\\Workspace\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/E:\\Workspace\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/E:\\Workspace\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_launcher.png",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }
 ]

@@ -1,6 +1,10 @@
 [
     {
-        "merged": "E:\\Workspace\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "E:\\Workspace\\app\\src\\main\\res\\menu\\main.xml"
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/E:\\Workspace\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/E:\\Workspace\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/menu/main.xml"
     }
 ]
