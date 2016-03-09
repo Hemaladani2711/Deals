@@ -2,8 +2,11 @@ package com.example.deals;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
@@ -17,6 +20,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.example.SQLITEDatabase.DatabaseHandle;
+import com.example.webservices.WebReceiveAds;
 import com.example.webservices.WebSendNewUserData;
 
 import java.util.Calendar;
@@ -41,6 +45,14 @@ public class NewUserDetailPage extends Activity {
 	    setContentView(R.layout.newuserdetailpage);
 	    findObjects();
 		obj=new getcountry();
+		btnBack.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent it = new Intent(NewUserDetailPage.this,checkuser.class);
+				startActivity(it);
+
+			}
+		});
 
 		ArrayAdapter<String>adapter=new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,obj.getCountrydetail());
 		edtCountryUser.setAdapter(adapter);
@@ -111,7 +123,9 @@ public class NewUserDetailPage extends Activity {
 					strUserName=edtNameUser.getText().toString();
 					Calendar calendar = Calendar.getInstance();
 					datecreated=calendar.getTimeInMillis();
+					Log.i("DatecreatedLong", ""+datecreated);
 					strUserPW=edtPasswordUser.getText().toString();
+
 					strUserZipCode=edtZipUser.getText().toString();
 					
 
@@ -131,9 +145,12 @@ public class NewUserDetailPage extends Activity {
 
 
 
-	    
+
 	    // TODO Auto-generated method stub
 	}
+
+
+
 	public class sendUserdata extends AsyncTask<String,Void,Void>
 	{
 		ProgressDialog pd;
@@ -153,7 +170,7 @@ public class NewUserDetailPage extends Activity {
 			pd=new ProgressDialog(NewUserDetailPage.this);
 			pd.setMessage("Registering and Downloading Deals");
 			pd.show();
-			WebserviceUser.setdata(strUserName,strUserMobileNo,strUserEmail,strUserPW,strUserZipCode,strCountryName,strIsBusiness,datecreated);
+			WebserviceUser.setInfo(strUserName,strUserMobileNo,strUserEmail,strUserPW,strUserZipCode,strCountryName,strIsBusiness,datecreated);
 		}
 
 		@Override
@@ -168,13 +185,21 @@ public class NewUserDetailPage extends Activity {
 			else
 			{
 				//Toast.makeText(getApplicationContext(), "" + userId, Toast.LENGTH_LONG).show();
+
+				SetAndGetIdPw obj=new SetAndGetIdPw();
+				obj.setpref();
+
 				createnewUser task = new createnewUser();
 				task.execute();
+				fetchadvertisements taks1=new fetchadvertisements();
+				taks1.execute();
 			}
 
 
 		}
 	}
+
+
 
 	public class createnewUser extends AsyncTask<String,Void, Void>
 	{
@@ -211,6 +236,60 @@ public class NewUserDetailPage extends Activity {
 		protected void onProgressUpdate(Void... values) {
 			super.onProgressUpdate(values);
 		}
+	}
+
+	public class fetchadvertisements extends AsyncTask<String,Void, Void>
+	{
+		ProgressDialog pd;
+
+		@Override
+		protected Void doInBackground(String... params) {
+			WebReceiveAds obj =new WebReceiveAds();
+			obj.senddata(userId,strUserZipCode,strCountryName,datecreated);
+			obj.fetchads();
+
+
+
+			return null;
+
+		}
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			pd=new ProgressDialog(NewUserDetailPage.this);
+			pd.setMessage("Downloading Ads");
+			pd.show();
+
+		}
+
+		@Override
+		protected void onPostExecute(Void aVoid) {
+			super.onPostExecute(aVoid);
+			pd.cancel();
+
+
+		}
+
+		@Override
+		protected void onProgressUpdate(Void... values) {
+			super.onProgressUpdate(values);
+		}
+	}
+
+	public class SetAndGetIdPw
+	{
+
+		public void setpref()
+		{
+			SharedPreferences sharedpref= PreferenceManager.getDefaultSharedPreferences(NewUserDetailPage.this);
+			SharedPreferences.Editor editor=sharedpref.edit();
+			editor.putString("UserId",strUserEmail);
+			editor.putString("UserPw",strUserPW);
+			editor.apply();
+		}
+
+
 	}
 	public void findObjects()
 	{

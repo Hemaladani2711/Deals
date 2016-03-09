@@ -25,7 +25,7 @@ import java.util.ArrayList;
  * Created by Hemal on 12/15/2015.
  */
 public class WebSendNewUserData {
-    public static String URL="http://10.0.0.114/dealswebservice/getUserData.php";
+    public static String URL="http://134.154.17.112/dealswebservice/getUserData.php";
 
     String strUserName,strUserMobileNo,strUserEmail,strUserPW,strUserZipCode,strCountryName, strIsBusiness,strDateCreated;
     int userId;
@@ -42,7 +42,7 @@ public class WebSendNewUserData {
     {
         return userId;
     }
-    public void setdata(String strUserName1,String strUserMobileNo1,String strUserEmail1,String strUserPW1,String strUserZipCode1,String strCountryName1, String strIsBusiness1, long datecreated)
+    public void setInfo(String strUserName1,String strUserMobileNo1,String strUserEmail1,String strUserPW1,String strUserZipCode1,String strCountryName1, String strIsBusiness1, long datecreated)
     {
         strUserName=strUserName1;
         strUserMobileNo=strUserMobileNo1;
@@ -86,6 +86,7 @@ public class WebSendNewUserData {
             lstUserInfo.add(new BasicNameValuePair("strCountryName",strCountryName));
             lstUserInfo.add(new BasicNameValuePair("strIsBusiness",strIsBusiness));
             lstUserInfo.add(new BasicNameValuePair("datecreated", strDateCreated));
+            Log.i("StringDateCreated",strDateCreated);
            // Log.i("strUserName", strUserName + strUserMobileNo + strUserEmail + strUserPW + strUserZipCode + strCountryName + strIsBusiness + strDateCreated);
             DefaultHttpClient client = new DefaultHttpClient();
             HttpPost post=new HttpPost(URL);
@@ -102,7 +103,7 @@ public class WebSendNewUserData {
             }
 
             String result = builder.toString();
-            //Log.i("result",result);
+            Log.i("result",result);
             setdata(result);
             is.close();
 
