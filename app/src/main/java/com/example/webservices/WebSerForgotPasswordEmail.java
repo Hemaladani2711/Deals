@@ -1,5 +1,7 @@
 package com.example.webservices;
 
+import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,49 +16,35 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONObject;
 
 public class WebSerForgotPasswordEmail {
 	
 	
-	String UserEmail,UrlForgotPwId,strForgotPw;
+	String UserEmail,strForgotPwEmail;
 	int responseForgotPw;
-	
+	public static String UrlForgotPwId="http://134.154.17.112/dealswebservice/getForgotPasswordInfo.php";
 	ArrayList<NameValuePair>NameValuepair=new ArrayList<NameValuePair>();
 	
 	public WebSerForgotPasswordEmail(String strForgotPW)
 	{
-		strForgotPw=strForgotPW;
+		strForgotPwEmail=strForgotPW;
 	}
 	
 	public int getresponse()
 	{
 		return responseForgotPw;
 	}
-	public void seturl()
-	{
-		UrlForgotPwId="";
-		
-		
-		/*
-		 * 
-		 * 
-		 * 
-		 * 
-		 * 
-		 * 
-		 * */
-					
-	}
-	
+
 	
 	
 	public void fetchdata()
 	{
 		try {
-		seturl();
+
 		DefaultHttpClient client=new DefaultHttpClient();
 		HttpPost post=new HttpPost(UrlForgotPwId);
-		NameValuepair.add(new BasicNameValuePair("varForgotEmail",strForgotPw));
+		NameValuepair.add(new BasicNameValuePair("varForgotEmail",strForgotPwEmail));
 		post.setEntity(new UrlEncodedFormEntity(NameValuepair));
 		HttpResponse response=client.execute(post);
 		HttpEntity entity=response.getEntity();
@@ -70,7 +58,9 @@ public class WebSerForgotPasswordEmail {
 		}
 		
 		String result=builder.toString();
-		responseForgotPw=Integer.parseInt(result);
+			Log.i("Result", "" + result);
+			setdata(result);
+		//responseForgotPw=Integer.parseInt(result);
 						
 		is.close();
 		
@@ -82,6 +72,20 @@ public class WebSerForgotPasswordEmail {
 			e.printStackTrace();
 		}
 		
+	}
+
+	public void setdata(String result)
+	{
+		try{
+		JSONObject jobj=new JSONObject(result);
+		responseForgotPw=jobj.getInt("response");
+
+
+		}
+		catch (Exception e) {
+			Log.i("Json error",e.getMessage());
+		}
+
 	}
 	
 

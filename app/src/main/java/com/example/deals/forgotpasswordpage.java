@@ -30,13 +30,21 @@ public class forgotpasswordpage extends Activity {
 	    setContentView(R.layout.forgotpassword);
 	    findobjects();
 	    btnBackforgotPage.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
-			
-				Intent it=new Intent(forgotpasswordpage.this,checkuser.class);
+
+				Intent it = new Intent(forgotpasswordpage.this, checkuser.class);
 				startActivity(it);
-				
+
+			}
+		});
+		btnBackforgotPage.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent it = new Intent(forgotpasswordpage.this,checkuser.class);
+				startActivity(it);
+
 			}
 		});
 	    
@@ -48,14 +56,7 @@ public class forgotpasswordpage extends Activity {
 				txtForgotEmail=edtEmailforgotPW.getText().toString();
 				fetchForgotPWInfo task=new fetchForgotPWInfo();
 				task.execute();
-				if(response==1)
-				{
-					Toast.makeText(getApplicationContext(), "Sent password to registered email", Toast.LENGTH_LONG).show();
-				}
-				else if(response==0)
-				{
-					Toast.makeText(getApplicationContext(), "User doesn't exists, register as new User", Toast.LENGTH_LONG).show();
-				}
+
 				
 				
 			}
@@ -99,6 +100,17 @@ public class forgotpasswordpage extends Activity {
 			super.onPostExecute(result);
 			pd.dismiss();
 			response=obj.getresponse();
+			if(response==1) {
+				Toast.makeText(getApplication(),"Password sent",Toast.LENGTH_LONG).show();
+			}
+			else if(response==3)
+			{
+				Toast.makeText(getApplication(),"ZipDeals doesn't recognize provided email",Toast.LENGTH_LONG).show();
+			}
+			else if(response==2)
+			{
+				Toast.makeText(getApplication(),"Server error",Toast.LENGTH_LONG).show();
+			}
 		}
 		
 		
