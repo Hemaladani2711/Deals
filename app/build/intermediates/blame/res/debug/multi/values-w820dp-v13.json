@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
+        "outputFile": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,31 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/values-w820dp/dimens.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 305,
-                        "endColumn": 57,
-                        "endOffset": 358
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/joshuamarquez/Documents/Android apps/Deals/E:\\Workspace\\app\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 57,
-                    "endOffset": 108
-                },
-                "from": {
-                    "file": "/Users/joshuamarquez/Documents/Android apps/Deals/E:\\Workspace\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "file": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
