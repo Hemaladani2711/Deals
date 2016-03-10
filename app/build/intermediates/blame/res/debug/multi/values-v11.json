@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
+        "outputFile": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/values-v11/values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,14 +12,14 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/values-v11/styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 183,
+                        "startOffset": 177,
                         "endLine": 8,
                         "endColumn": 12,
-                        "endOffset": 314
+                        "endOffset": 306
                     }
                 }
             },
@@ -33,7 +33,7 @@
                     "endOffset": 693
                 },
                 "from": {
-                    "file": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\values-v11\\values.xml",
+                    "file": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/values-v11/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -54,7 +54,7 @@
                     "endOffset": 1214
                 },
                 "from": {
-                    "file": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\values-v11\\values.xml",
+                    "file": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/values-v11/values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -74,7 +74,7 @@
                     "endOffset": 1327
                 },
                 "from": {
-                    "file": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\values-v11\\values.xml",
+                    "file": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/values-v11/values.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -93,7 +93,7 @@
                     "endOffset": 1422
                 },
                 "from": {
-                    "file": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\values-v11\\values.xml",
+                    "file": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/values-v11/values.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -112,7 +112,7 @@
                     "endOffset": 1539
                 },
                 "from": {
-                    "file": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\values-v11\\values.xml",
+                    "file": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/values-v11/values.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -131,7 +131,7 @@
                     "endOffset": 1664
                 },
                 "from": {
-                    "file": "C:\\Users\\Myles\\Documents\\GitHub\\Deals\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\18.0.0\\res\\values-v11\\values.xml",
+                    "file": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/values-v11/values.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
