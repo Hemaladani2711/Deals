@@ -3,6 +3,7 @@ package com.example.deals;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -37,7 +38,8 @@ public class checkuser extends Activity {
 	    setContentView(R.layout.checkuserpage);
 	    findobjects();
 	    setbuttonsstate();
-	    
+		MediaPlayer mySound = MediaPlayer.create(checkuser.this, R.raw.jingle);
+		mySound.start();
 	    
 	    // TODO Auto-generated method stub
 	}

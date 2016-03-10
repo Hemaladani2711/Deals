@@ -27,8 +27,8 @@
        android:layout_height="match_parent"
        android:src="@drawable/zd1"
        android:layout_marginBottom="3280dp"
+       android:contentDescription="@string/flashscreen"
        android:layout_alignBottom="@+id/imageView1"
        android:layout_centerHorizontal="true" />
-
 
 </RelativeLayout>

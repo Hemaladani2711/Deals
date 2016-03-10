@@ -2,7 +2,7 @@ package com.example.deals;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-
+import android.media.MediaPlayer;//for sound
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,9 +10,11 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
+
 
 	private static int SPLASH_TIME_OUT=3000;
 	String Userid,Pw;
@@ -20,9 +22,11 @@ public class MainActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+		MediaPlayer mySound = MediaPlayer.create(MainActivity.this, R.raw.welcome);
+		mySound.start();
+
 		new Handler().postDelayed(new Runnable() {
-			
+
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
@@ -30,22 +34,19 @@ public class MainActivity extends ActionBarActivity {
 				Intent it = new Intent(MainActivity.this, checkuser.class);
 				startActivity(it);
 				finish();
-				if(!checkpref()) {
+				if (!checkpref()) {
 					//Toast.makeText(getApplicationContext(),"No User",Toast.LENGTH_LONG).show();
 					/*Intent it = new Intent(MainActivity.this, checkuser.class);
 					startActivity(it);*/
 
-				}
-				else
-				{
+				} else {
 					//Toast.makeText(getApplicationContext(),"User Exists"+Userid,Toast.LENGTH_LONG).show();
 				}
-				
+
 			}
 		}, SPLASH_TIME_OUT);
 		
 	}
-
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -91,6 +92,6 @@ public class MainActivity extends ActionBarActivity {
 
 
 	}
-	
+
 }
 
