@@ -28,14 +28,13 @@ public class WebCheckExistingUser {
 	ArrayList<NameValuePair>lstUserLoginIdPw=new ArrayList<NameValuePair>();
 	//String userId,userName,userMobile,userEmail,userPw,userZip,userCountry,isBusiness,dateCreated;
 	//ArrayList<String> lstUserInfo=new ArrayList<String>(9);
-	HashMap map;
+	HashMap map;//
 	int UserId;
 	String txtExistingUserId,txtExistingUserPW;
 
-	public WebCheckExistingUser(String txtUserId,String txtUserPw)
-	{
-		txtExistingUserId=txtUserId;
-		txtExistingUserPW=txtUserPw;
+	public WebCheckExistingUser(String txtUserId,String txtUserPw) {
+		txtExistingUserId = txtUserId;
+		txtExistingUserPW = txtUserPw;
 	}
 
 	public HashMap returnUserdata()
