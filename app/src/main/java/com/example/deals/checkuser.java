@@ -38,9 +38,9 @@ public class checkuser extends Activity {
 	    setContentView(R.layout.checkuserpage);
 	    findobjects();
 	    setbuttonsstate();
-		MediaPlayer mySound = MediaPlayer.create(checkuser.this, R.raw.jingle);
+		MediaPlayer mySound = MediaPlayer.create(checkuser.this, R.raw.zip);
 		mySound.start();
-	    
+
 	    // TODO Auto-generated method stub
 	}
 	

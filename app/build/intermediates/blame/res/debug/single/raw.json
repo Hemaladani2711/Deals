@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/raw/welcome.mp3",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/raw/welcome.mp3"
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/raw/zip.mp3",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/raw/zip.mp3"
     },
     {
-        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/raw/jingle.mp3",
-        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/raw/jingle.mp3"
+        "merged": "/Users/joshuamarquez/Documents/Android apps/Deals/app/build/intermediates/res/merged/debug/raw/welcome.mp3",
+        "source": "/Users/joshuamarquez/Documents/Android apps/Deals/app/src/main/res/raw/welcome.mp3"
     }
 ]
