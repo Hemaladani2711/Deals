@@ -34,6 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/rdoExistingUser"
                 android:layout_centerHorizontal="true"
+                android:inputType="textEmailAddress"
                 android:ems="10"
                 android:hint="name@email.com"
                 android:textColorHint="@color/iron">

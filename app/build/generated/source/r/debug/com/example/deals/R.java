@@ -776,7 +776,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int RelativeLayout2=0x7f0c0043;
-        public static final int ScrollView1=0x7f0c0050;
+        public static final int ScrollView1=0x7f0c0054;
         public static final int action_bar=0x7f0c001a;
         public static final int action_bar_activity_content=0x7f0c0000;
         public static final int action_bar_container=0x7f0c0019;
@@ -790,17 +790,17 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c002f;
         public static final int action_mode_bar_stub=0x7f0c002e;
         public static final int action_mode_close_button=0x7f0c0022;
-        public static final int action_settings=0x7f0c005c;
+        public static final int action_settings=0x7f0c0060;
         public static final int activity_chooser_view_content=0x7f0c0023;
         public static final int always=0x7f0c0011;
         public static final int beginning=0x7f0c000d;
-        public static final int btnBackForgotPage=0x7f0c004d;
-        public static final int btnBackNewUser=0x7f0c0051;
+        public static final int btnBackForgotPage=0x7f0c0051;
+        public static final int btnBackNewUser=0x7f0c0055;
         public static final int btnCheckNewUser=0x7f0c004b;
         public static final int btnExistingUserLogin=0x7f0c0047;
         public static final int btnForgotPW=0x7f0c0048;
-        public static final int btnSubmitForgotPW=0x7f0c004f;
-        public static final int btnUserSubmit=0x7f0c0059;
+        public static final int btnSubmitForgotPW=0x7f0c0053;
+        public static final int btnUserSubmit=0x7f0c005d;
         public static final int checkbox=0x7f0c002b;
         public static final int collapseActionView=0x7f0c0012;
         public static final int default_activity_button=0x7f0c0026;
@@ -808,15 +808,17 @@ containing a value of this type.
         public static final int disableHome=0x7f0c0007;
         public static final int dropdown=0x7f0c0017;
         public static final int edit_query=0x7f0c0036;
-        public static final int edtCountryName=0x7f0c0056;
+        public static final int edtCountryName=0x7f0c005a;
         public static final int edtEmailExistingUser=0x7f0c0044;
-        public static final int edtEmailForgotPW=0x7f0c004e;
-        public static final int edtEmailUser=0x7f0c0055;
-        public static final int edtEnterYourMobile=0x7f0c005a;
-        public static final int edtEnterYourName=0x7f0c0054;
+        public static final int edtEmailForgotPW=0x7f0c0052;
+        public static final int edtEmailUser=0x7f0c0059;
+        public static final int edtEnterYourMobile=0x7f0c005e;
+        public static final int edtEnterYourName=0x7f0c0058;
         public static final int edtExistingUserPw=0x7f0c0046;
-        public static final int edtPasswordUser=0x7f0c005b;
-        public static final int edtUserZipcode=0x7f0c0053;
+        public static final int edtPasswordUser=0x7f0c005f;
+        public static final int edtUserZipcode=0x7f0c0057;
+        public static final int edt_refresh=0x7f0c004d;
+        public static final int edt_search=0x7f0c004e;
         public static final int end=0x7f0c000e;
         public static final int expand_activities_button=0x7f0c0024;
         public static final int expanded_menu=0x7f0c002a;
@@ -827,8 +829,10 @@ containing a value of this type.
         public static final int image=0x7f0c0025;
         public static final int imageView=0x7f0c004c;
         public static final int imageView1=0x7f0c0042;
+        public static final int ledt_deallist=0x7f0c0050;
         public static final int left_icon=0x7f0c0031;
         public static final int listMode=0x7f0c0004;
+        public static final int listView=0x7f0c004f;
         public static final int list_item=0x7f0c0027;
         public static final int middle=0x7f0c000f;
         public static final int never=0x7f0c0014;
@@ -838,10 +842,10 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f0c0035;
         public static final int radio=0x7f0c002d;
         public static final int radioGroup1=0x7f0c0049;
-        public static final int rdoBusiness=0x7f0c0058;
+        public static final int rdoBusiness=0x7f0c005c;
         public static final int rdoExistingUser=0x7f0c0045;
         public static final int rdoNewUser=0x7f0c004a;
-        public static final int rdoUser=0x7f0c0057;
+        public static final int rdoUser=0x7f0c005b;
         public static final int right_container=0x7f0c0032;
         public static final int right_icon=0x7f0c0033;
         public static final int search_badge=0x7f0c0038;
@@ -861,7 +865,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f0c001c;
         public static final int submit_area=0x7f0c003f;
         public static final int tabMode=0x7f0c0006;
-        public static final int textView1=0x7f0c0052;
+        public static final int textView1=0x7f0c0056;
         public static final int title=0x7f0c0029;
         public static final int title_container=0x7f0c0030;
         public static final int top_action_bar=0x7f0c001e;
@@ -899,9 +903,10 @@ containing a value of this type.
         public static final int abc_search_view=0x7f040017;
         public static final int activity_main=0x7f040018;
         public static final int checkuserpage=0x7f040019;
-        public static final int forgotpassword=0x7f04001a;
-        public static final int newuserdetailpage=0x7f04001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f04001c;
+        public static final int dealsviewpage=0x7f04001a;
+        public static final int forgotpassword=0x7f04001b;
+        public static final int newuserdetailpage=0x7f04001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f04001d;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;

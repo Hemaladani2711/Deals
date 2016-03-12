@@ -16,10 +16,13 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.example.deals.checknetwork;
 import com.example.SQLITEDatabase.DatabaseHandle;
 import com.example.webservices.WebCheckExistingUser;
 
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class checkuser extends Activity {
@@ -31,6 +34,7 @@ public class checkuser extends Activity {
 	WebCheckExistingUser obj;
 	String txtExistingUserId,txtExistingUserPW;
 	DatabaseHandle sqlitetables;
+	checknetwork cn;
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,7 @@ public class checkuser extends Activity {
 	    setContentView(R.layout.checkuserpage);
 	    findobjects();
 	    setbuttonsstate();
+		cn = new checknetwork();
 		MediaPlayer mySound = MediaPlayer.create(checkuser.this, R.raw.zip);
 		mySound.start();
 
@@ -69,12 +74,11 @@ public class checkuser extends Activity {
 	    }
 	    
 	    rdoExistingUser.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-			
+
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 				// TODO Auto-generated method stub
-				if(buttonView.isChecked())
-				{
+				if (buttonView.isChecked()) {
 					edtExistingUserId.setEnabled(true);
 					edtExistingUserPW.setEnabled(true);
 					btnForgotPW.setEnabled(true);
@@ -86,34 +90,33 @@ public class checkuser extends Activity {
 		});
 	    
 	    btnForgotPW.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-			
-				Intent it=new Intent(checkuser.this,forgotpasswordpage.class);
+
+				Intent it = new Intent(checkuser.this, forgotpasswordpage.class);
 				startActivity(it);
-				
+
 			}
 		});
 	    
 	    rdoNewUser.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-			
+
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 				// TODO Auto-generated method stub
-				if(buttonView.isChecked())
-				{
-					
+				if (buttonView.isChecked()) {
+
 					edtExistingUserId.setEnabled(false);
 					edtExistingUserPW.setEnabled(false);
 					btnForgotPW.setEnabled(false);
 					btnLogin.setEnabled(false);
 					btnSubmit.setEnabled(true);
-					
+
 					rdoExistingUser.setChecked(false);
 				}
-				
+
 			}
 		});
 	    
@@ -122,26 +125,40 @@ public class checkuser extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				txtExistingUserPW= null;
 			txtExistingUserId=edtExistingUserId.getText().toString();
 			txtExistingUserPW=edtExistingUserPW.getText().toString();
-			checkexistinguserserver task=new checkexistinguserserver();
-				task.execute();
-				
-				
-				
+				if(!cn.isNetworkAvailable(getApplicationContext())) {
+					Toast.makeText(getApplicationContext(), "Error no internet found, offline mode only!", Toast.LENGTH_LONG).show();
+				}
+				//check if email is valid
+				if(!isEmailValid(txtExistingUserId))
+				{
+					edtExistingUserId.setError("Invalid Email");
+				}
+				else if(!isPasswordValid(txtExistingUserPW))
+				{
+					edtExistingUserPW.setError("Password can't be empty ");
+				}
+				else
+				{
+					checkexistinguserserver task = new checkexistinguserserver();
+					task.execute();
+				}
+
 			}
 		});
-	    
-	    btnSubmit.setOnClickListener(new OnClickListener() {
-			
+
+		btnSubmit.setOnClickListener(new OnClickListener() {
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-			
-				Intent it=new Intent(checkuser.this,NewUserDetailPage.class);
+
+				Intent it = new Intent(checkuser.this, NewUserDetailPage.class);
 				startActivity(it);
-				
-				
+
+
 			}
 		});
 	    
@@ -191,7 +208,7 @@ public class checkuser extends Activity {
 			}
 			catch(Exception e)
 			{
-				Log.i("Error in Check User",e.getMessage());
+				//Log.i("Error in Check User",e.getMessage());
 			}
 
 
@@ -200,7 +217,21 @@ public class checkuser extends Activity {
 
 	}
 
-	
+	private boolean isEmailValid(String email) {
+		String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+				+ "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+
+		Pattern pattern = Pattern.compile(EMAIL_PATTERN);
+		Matcher matcher = pattern.matcher(email);
+		return matcher.matches();
+	}
+	private boolean isPasswordValid(String pass) {
+		if (pass.length() > 0)
+		{
+			return true;
+		}
+		return false;
+	}
 	public void findobjects()
 	{
 		
