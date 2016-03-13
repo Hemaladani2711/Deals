@@ -38,6 +38,7 @@ public class NewUserDetailPage extends Activity {
 	long datecreated;
 	int userId;
 	getcountry obj;
+	checknetwork cn;
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,10 @@ public class NewUserDetailPage extends Activity {
 	    setContentView(R.layout.newuserdetailpage);
 	    findObjects();
 		obj=new getcountry();
+		cn = new checknetwork();
+		if(!cn.isNetworkAvailable(getApplicationContext())) {
+			Toast.makeText(getApplicationContext(), "Error no internet found, offline mode only!", Toast.LENGTH_LONG).show();
+		}
 		btnBack.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {

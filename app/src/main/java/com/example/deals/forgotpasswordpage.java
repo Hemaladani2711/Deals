@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class forgotpasswordpage extends Activity {
 
 	/** Called when the activity is first created. */
@@ -21,6 +22,8 @@ public class forgotpasswordpage extends Activity {
 	EditText edtEmailforgotPW;
 	public String txtForgotEmail;
 	int response;
+	checknetwork cn;
+	checkvalidation cv;
 	
 	
 	
@@ -28,6 +31,12 @@ public class forgotpasswordpage extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.forgotpassword);
+		cn = new checknetwork();
+		cv = new checkvalidation();
+		if(!cn.isNetworkAvailable(getApplicationContext()))
+		{
+			Toast.makeText(getApplicationContext(), "Error no internet found, offline mode only!", Toast.LENGTH_LONG).show();
+		}
 	    findobjects();
 	    btnBackforgotPage.setOnClickListener(new OnClickListener() {
 
@@ -54,9 +63,16 @@ public class forgotpasswordpage extends Activity {
 			public void onClick(View v) {
 				
 				txtForgotEmail=edtEmailforgotPW.getText().toString();
-				fetchForgotPWInfo task=new fetchForgotPWInfo();
-				task.execute();
 
+				if(!cv.isEmailValid(txtForgotEmail))
+				{
+					edtEmailforgotPW.setError("Invalid Email");
+				}
+				else
+				{
+					fetchForgotPWInfo task = new fetchForgotPWInfo();
+					task.execute();
+				}
 				
 				
 			}

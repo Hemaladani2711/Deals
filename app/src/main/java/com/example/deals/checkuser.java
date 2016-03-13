@@ -16,13 +16,11 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import com.example.deals.checknetwork;
 import com.example.SQLITEDatabase.DatabaseHandle;
 import com.example.webservices.WebCheckExistingUser;
 
 import java.util.HashMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 
 public class checkuser extends Activity {
@@ -35,6 +33,7 @@ public class checkuser extends Activity {
 	String txtExistingUserId,txtExistingUserPW;
 	DatabaseHandle sqlitetables;
 	checknetwork cn;
+	checkvalidation cv;
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -43,8 +42,13 @@ public class checkuser extends Activity {
 	    findobjects();
 	    setbuttonsstate();
 		cn = new checknetwork();
+		cv = new checkvalidation();
 		MediaPlayer mySound = MediaPlayer.create(checkuser.this, R.raw.zip);
 		mySound.start();
+
+		if(!cn.isNetworkAvailable(getApplicationContext())) {
+			Toast.makeText(getApplicationContext(), "Error no internet found, offline mode only!", Toast.LENGTH_LONG).show();
+		}
 
 	    // TODO Auto-generated method stub
 	}
@@ -128,15 +132,13 @@ public class checkuser extends Activity {
 				txtExistingUserPW= null;
 			txtExistingUserId=edtExistingUserId.getText().toString();
 			txtExistingUserPW=edtExistingUserPW.getText().toString();
-				if(!cn.isNetworkAvailable(getApplicationContext())) {
-					Toast.makeText(getApplicationContext(), "Error no internet found, offline mode only!", Toast.LENGTH_LONG).show();
-				}
+
 				//check if email is valid
-				if(!isEmailValid(txtExistingUserId))
+				if(!cv.isEmailValid(txtExistingUserId))
 				{
 					edtExistingUserId.setError("Invalid Email");
 				}
-				else if(!isPasswordValid(txtExistingUserPW))
+				else if(!cv.isPasswordValid(txtExistingUserPW))
 				{
 					edtExistingUserPW.setError("Password can't be empty ");
 				}
@@ -217,21 +219,6 @@ public class checkuser extends Activity {
 
 	}
 
-	private boolean isEmailValid(String email) {
-		String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
-				+ "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-
-		Pattern pattern = Pattern.compile(EMAIL_PATTERN);
-		Matcher matcher = pattern.matcher(email);
-		return matcher.matches();
-	}
-	private boolean isPasswordValid(String pass) {
-		if (pass.length() > 0)
-		{
-			return true;
-		}
-		return false;
-	}
 	public void findobjects()
 	{
 		
